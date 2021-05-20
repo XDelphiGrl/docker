@@ -1,6 +1,6 @@
 This is NOT an official version of Liquibase Docker! The official location is https://github.com/liquibase/docker. The official liquibase-docker container is located on DockerHub at https://hub.docker.com/r/liquibase/liquibase.
 
-If you are not Erzsebet Carmean or one of her esteemed collegues, steer clear of this repo and associated docker container! 
+If you are not Erzsebet Carmean or one of her esteemed collegues, you will be happier, fitter, smarter and more gorgeous if you use the official versions!  
 
 #####################################################
 #### RUNNING LIQUIBASE DOCKER and DOCKER POSTGRES ###
