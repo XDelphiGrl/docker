@@ -16,7 +16,7 @@ docker run --network liquibase --ip="10.0.0.3" --name=pg_12 --hostname=pg_12_hos
 docker network connect liquibase pg_12
 
 **** Configure Properties File ****
-# Liquibase Docker connects to 5432 when on the same network as Postgres.
+NOTE: Liquibase Docker connects to 5432 when on the same network as Postgres.
 url: jdbc:postgresql://10.0.0.3:5432/goku
 username: lbuser1
 password: password
@@ -26,6 +26,6 @@ liquibaseProLicenseKey: PRO
 
 classpath: /liquibase/changelog/:/liquibase/changelog/postgresql-42.2.18.jar
 
-# Start Liquibase and Connect to Network #
+**** Start Liquibase and Connect to Network ****
 docker run --rm --network liquibase --ip=10.0.0.4 -v C:\dev\DaticalDB-testing\liquibase-pro-cli-project\postgres_lbpro_master:/liquibase/changelog daticalerzsebet/docker --defaultsFile=/liquibase/changelog/liquibase.docker.properties --logLevel=FINE update
 
