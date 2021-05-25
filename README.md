@@ -21,10 +21,15 @@ docker network connect liquibase pg_12
 **** Configure Properties File ****
 
 NOTE: Liquibase Docker connects to 5432 when on the same network as Postgres.
+
 url: jdbc:postgresql://10.0.0.3:5432/goku
+
 username: lbuser1
+
 password: password
+
 changelogFile: postgres_lbpro_master_changelog.xml
+
 liquibase.hub.apiKey: <YOUR KEY>
 
 liquibaseProLicenseKey: PRO
